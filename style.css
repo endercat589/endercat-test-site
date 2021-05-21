@@ -63,10 +63,10 @@ h3 {
 
 h5 {
     font-weight: 300;
-    font-size: 3.2vh;
+    font-size: 120%;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1200px) {
     h1 {
         padding: 2vh 7vw;
         width: 80%;
@@ -84,7 +84,7 @@ h5 {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     h1 {
         padding: 2vh 7vw;
         width: 80%;
@@ -136,7 +136,16 @@ h5 {
     width: 60.4vw;
     height: 19vw;
     position: absolute;
+    overflow: hidden;
+    /* background-color: #ff000044; Debug */
 }
+
+[class^="card_container_"] > h3 { 
+    font-size: 2.8vw !important;
+    padding-left: 2vw;
+}
+
+[class^="card_container_"] > h5 { font-size: 2.1vw !important; }
 
 .card_r > img {
     right: -63.6vw;
@@ -146,6 +155,12 @@ h5 {
 .card_container_r {
     text-align: left;
     position: absolute;
+}
+
+@media screen and (max-width: 700px) {
+    [class^="card_container_"] {
+        width: 57.4vw;
+    }
 }
 
 img.endercat { background-color: #7e57c2; }
